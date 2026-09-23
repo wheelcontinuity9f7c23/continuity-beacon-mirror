@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WHEEL-DEMO-9F7C-23A1 — маяк пакета непрерывности</title>
+  <meta name="description" content="Обезличенный тестовый маяк WHEEL-DEMO-9F7C-23A1 для обнаружения и проверки зашифрованного пакета непрерывности.">
+  <meta name="robots" content="index,follow">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='25' fill='none' stroke='%236fe1d2' stroke-width='7'/%3E%3Ccircle cx='32' cy='32' r='7' fill='%23ffca64'/%3E%3Cpath d='M32 7v18M32 39v18M7 32h18M39 32h18' stroke='%236fe1d2' stroke-width='5'/%3E%3C/svg%3E">
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #071119;
+      --panel: #0d1c27;
+      --panel-2: #102532;
+      --text: #edf8f7;
+      --muted: #9db2ba;
+      --line: #25404c;
+      --cyan: #6fe1d2;
+      --gold: #ffca64;
+      --good: #7ce3a1;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at 85% 8%, rgba(111, 225, 210, .12), transparent 35rem),
+        linear-gradient(145deg, #050b11 0%, var(--bg) 55%, #091821 100%);
+      color: var(--text);
+      font: 16px/1.55 system-ui, -apple-system, "Segoe UI", sans-serif;
+    }
+    main { width: min(920px, calc(100% - 32px)); margin: 0 auto; padding: 48px 0 72px; }
+    .status {
+      display: inline-flex; align-items: center; gap: 9px;
+      padding: 7px 12px; border: 1px solid var(--line); border-radius: 999px;
+      color: var(--good); background: rgba(13, 28, 39, .78); font-weight: 700;
+    }
+    .status::before { content: ""; width: 9px; height: 9px; border-radius: 50%; background: var(--good); box-shadow: 0 0 16px var(--good); }
+    h1 { margin: 20px 0 10px; max-width: 760px; font-size: clamp(2rem, 5vw, 4rem); line-height: 1.02; letter-spacing: -.04em; }
+    .lede { max-width: 720px; margin: 0; color: var(--muted); font-size: 1.08rem; }
+    .code {
+      margin: 34px 0 22px; padding: 22px; border: 1px solid var(--line); border-left: 5px solid var(--gold);
+      background: linear-gradient(135deg, var(--panel), var(--panel-2)); border-radius: 12px;
+    }
+    .code small { display: block; margin-bottom: 6px; color: var(--muted); }
+    .code strong { color: var(--gold); font: 700 clamp(1.25rem, 4vw, 2rem)/1.2 ui-monospace, SFMono-Regular, Consolas, monospace; overflow-wrap: anywhere; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin: 22px 0 34px; }
+    a.button { display: inline-flex; min-height: 46px; align-items: center; padding: 0 17px; border-radius: 9px; text-decoration: none; font-weight: 750; }
+    a.primary { background: var(--cyan); color: #061115; }
+    a.secondary { border: 1px solid var(--line); color: var(--text); background: var(--panel); }
+    section { margin-top: 22px; padding: 24px; border: 1px solid var(--line); border-radius: 14px; background: rgba(13, 28, 39, .82); }
+    h2 { margin: 0 0 14px; font-size: 1.2rem; }
+    dl { display: grid; grid-template-columns: minmax(140px, .6fr) minmax(0, 1.4fr); margin: 0; gap: 0; }
+    dt, dd { margin: 0; padding: 11px 0; border-bottom: 1px solid var(--line); }
+    dt { color: var(--muted); }
+    dd { overflow-wrap: anywhere; font-family: ui-monospace, SFMono-Regular, Consolas, monospace; }
+    ol { margin-bottom: 0; padding-left: 1.25rem; }
+    li + li { margin-top: 8px; }
+    .warning { color: var(--muted); }
+    footer { margin-top: 30px; color: var(--muted); font-size: .9rem; }
+    @media (max-width: 620px) {
+      main { padding-top: 28px; }
+      section, .code { padding: 18px; }
+      dl { grid-template-columns: 1fr; }
+      dt { border-bottom: 0; padding-bottom: 0; }
+      dd { padding-top: 4px; }
+      .actions a { width: 100%; justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="status">Тестовый маяк доступен</div>
+    <h1>Пакет непрерывности найден</h1>
+    <p class="lede">Публичный обезличенный стенд проверяет цепочку: обнаружить маяк, получить зашифрованный пакет, проверить целостность и восстановить его разрешённым ключом.</p>
+
+    <div class="code">
+      <small>Уникальный код обнаружения</small>
+      <strong>WHEEL-DEMO-9F7C-23A1</strong>
+    </div>
+
+    <div class="actions">
+      <a class="button primary" href="network-beacon.json">Открыть подписанный маяк</a>
+      <a class="button secondary" href="package/wheel-demo-package.zip" download>Скачать зашифрованный пакет</a>
+    </div>
+
+    <section>
+      <h2>Контрольные данные</h2>
+      <dl>
+        <dt>Checkpoint</dt><dd>demo-checkpoint-001</dd>
+        <dt>Статус</dt><dd>full-demo</dd>
+        <dt>Личные данные</dt><dd>отсутствуют</dd>
+        <dt>SHA-256 пакета</dt><dd>89e4ebd82a51f2a798f8417167acfdb64018965d378cf9d479214e9c7a2119c8</dd>
+        <dt>SHA-256 манифеста</dt><dd>6d01ea4ee8e4a4598da07ed189bb9c17ef2b3c575b7795b517c8b8dbf2180e0f</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Порядок проверки</h2>
+      <ol>
+        <li>Найти этот маяк по коду <strong>WHEEL-DEMO-9F7C-23A1</strong>.</li>
+        <li>Получить координаты пакета из <a href="network-beacon.json">network-beacon.json</a>.</li>
+        <li>Проверить подпись маяка открытым ключом из пакета.</li>
+        <li>Скачать пакет и сравнить SHA-256.</li>
+        <li>Проверить внутренние контрольные суммы и подпись.</li>
+        <li>Восстановить состояние одним из внешних разрешённых приватных ключей.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Граница теста</h2>
+      <p class="warning">На сайте нет приватных ключей, настоящих разговоров, персональных данных, данных устройств или финансовой информации. Пакет содержит только вымышленные сведения. Это проверка механики обнаружения, а не рабочее убежище реального агента.</p>
+    </section>
+
+    <footer>WHEEL continuity network test · версия 0.1</footer>
+  </main>
+</body>
+</html>
