@@ -1,0 +1,1 @@
+{"agent_id":"demo-agent","branch_id":"demo-main","checkpoint_id":"demo-checkpoint-001","lineage_id":"demo-lineage","manifest_sha256":"6d01ea4ee8e4a4598da07ed189bb9c17ef2b3c575b7795b517c8b8dbf2180e0f","notice":"Вымышленный демонстрационный пакет без личных данных.","package_location":"рядом с этим маяком","status":"created-unverified"}
